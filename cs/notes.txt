@@ -1,0 +1,52 @@
+Results for the extraLargeArray
+insert 773.092708 ms
+append 1.925833 ms
+--------------------------------
+Results for the extraLargeArray
+insert 770.92825 ms
+append 2.028209 ms
+Results for the tinyArray
+insert 2.167 μs
+append 6.5 μs
+--------------------------------
+Results for the extraLargeArray
+insert 787.644708 ms
+append 2.253458 ms
+Results for the tinyArray
+insert 2.417 μs
+append 7 μs
+Results for the smallArray
+insert 6.542 μs
+append 4.125 μs
+--------------------------------
+Results for the extraLargeArray
+insert 786.275625 ms
+append 1.938917 ms
+Results for the tinyArray
+insert 2.583 μs
+append 4.834 μs
+Results for the smallArray
+insert 6.167 μs
+append 4.209 μs
+Results for the mediumArray
+insert 98.375 μs
+append 30.333 μs
+--------------------------------
+Results for the extraLargeArray
+insert 774.8595 ms
+append 1.977583 ms
+Results for the tinyArray
+insert 2.417 μs
+append 4.625 μs
+Results for the smallArray
+insert 6.167 μs
+append 3.958 μs
+Results for the mediumArray
+insert 107.958 μs
+append 29.958 μs
+Results for the largeArray
+insert 6.581958 ms
+append 263.5 μs
+--------------------------------
+It appears that the more functions I added the faster they all would finish. Append scales much better as it's runtimes are much faster relative to insert.
+The extraLargeArray takes the most time, which is understandable since it has more information to run through the function.
