@@ -1,20 +1,26 @@
-let sum = 0
-function addToZero([]) {
-for (let i = 0; i < Array.length; i++) {
-    sum += Array[i];
-}; if(addToZero = 0 === true)
-    return true;
-    else return false;
-}
+function addToZero(numbers, sum) {
+    let array = [];
+    for (let i = 0; i < numbers.length; i++) {
+      for (let j = i + 1; j < numbers.length; j++) {
+        if (numbers[i] + numbers[j] === sum)
+          return true;
+      }
+    }
+    return false;
+  }
+  
+  let array = addToZero([], 0);
+  console.log(array);
+  // -> False
 
-console.log(addToZero([]));
-// -> False
+  array = addToZero([1], 0);
+  console.log(array);
+  // -> False
 
-console.log(addToZero([1]));
-// -> False
+  array = addToZero([1, 2, 3], 0);
+  console.log(array);
+  // -> False
 
-console.log(addToZero([1, 2, 3]));
-// -> False
-
-console.log(addToZero([1, 2, 3, -2]));
-// -> True
+  array = addToZero([1, 2, 3, -2], 0);
+  console.log(array);
+  // -> True
